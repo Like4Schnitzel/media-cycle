@@ -37,6 +37,8 @@
 		]
 	},
 	"dependencies": {
-		"@types/node": "^24.7.0"
+		"@types/node": "^24.7.0",
+		"file-type": "^21.0.0",
+		"mime": "^4.1.0"
 	}
 }

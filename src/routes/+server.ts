@@ -9,7 +9,7 @@ export const GET: RequestHandler = async () => {
     }
 
     const filePaths = readdirSync(mediaDirRootPath);
-    const randomIndex = Math.round(Math.random() * filePaths.length-1);
+    const randomIndex = Math.round(Math.random() * (filePaths.length-1));
     const randomFilePath = join(mediaDirRootPath, filePaths[randomIndex]);
     const fileAndType = await readFileWithMimeType(randomFilePath);
     if (fileAndType === null) {
